@@ -1,23 +1,17 @@
 # runpad
 
-Run code from etherpad. Designed for collaborative use, e.g. in the classroom.
-Works with any publicly accessible pad.
-
-Use cases:
-
-* classroom: people can write code together, correct, discuss and extend code
-  and see the results immediately
-* development, e.g. debugging, snippets, interviews or pair programming
+Run code from an etherpad. Designed for collaborative editing, e.g. in a
+classroom setting. Works with any publicly accessible pad.
 
 How it works:
 
 * register your pad on [runpad.xyz](https://runpad.xyz)
-* go to your own runpad output page and see stdout of your code, updated in real-time
+* go to your own runpad output page and see output of your code, updated in real-time
 
 What code is executed?
 
-* we use the familiar code fence feature of markup languages
-* everything after the programming language name is passed as options
+* we call a fenced code a snippet
+* in the future you will be able to control execution with additional options
 
 ```python name=quicksort
 
@@ -25,8 +19,6 @@ def quicksort():
     pass
 
 ```
-
-Example runpad output page (demo): [runpad.xyz/r/hLMdySJlhd](https://runpad.xyz/r/hLMdySJlhd)
 
 Each instance gets a scratch space for files as well. Each pad also gets access
 to a virtual filesystem containing a variety of data.
@@ -56,7 +48,6 @@ Usage of runpad:
 * each pad gets a sandbox execution environment, that limits operations
 * each code snippet is allowed to run for a fixed number of seconds after which it is killed
 * each pad can make outgoing requests, but they are monitored and bandwidth limited
-
 
 ## MVP
 
