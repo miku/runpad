@@ -10,15 +10,7 @@ What code is executed?
 * we call a fenced code a snippet
 * in the future you will be able to control execution with additional options
 
-```
-```python
-
-def quicksort():
-    pass
-
-```
-```
-```
+![](static/example.png)
 
 Each instance gets a scratch space for files as well. Each pad also gets access
 to a virtual filesystem containing a variety of data.
