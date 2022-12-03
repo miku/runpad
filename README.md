@@ -1,6 +1,6 @@
 # runpad
 
-This is a working **prototype**.
+This is a working **prototype** - use your own risk.
 
 Run code from an etherpad. Designed for collaborative editing, e.g. in a
 classroom setting. Works with any publicly accessible pad.
@@ -10,11 +10,13 @@ What code is executed?
 * we call a fenced code a snippet
 * in the future you will be able to control execution with additional options
 
+```
 ```python
 
 def quicksort():
     pass
 
+```
 ```
 
 Each instance gets a scratch space for files as well. Each pad also gets access
